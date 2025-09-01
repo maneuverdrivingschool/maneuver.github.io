@@ -2,25 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#054277" />
+
+    <title>Maneuver Driving School – ICBC Lessons in Vancouver, BC</title>
     <meta
       name="description"
       content="ICBC certified driving school in Vancouver, BC. Expert instructors, flexible packages, and personalized lessons to help you pass your road test with confidence."
     />
-    <title>Maneuver Driving School – ICBC Certified Lessons in Vancouver</title>
-
     <meta
       name="keywords"
       content="Maneuver Driving School, ICBC Certified, Vancouver Driving School, Driving Lessons BC, Road Test Preparation, Learn to Drive Vancouver, Class 5 Driving Lessons, Class 7 Driving Lessons, Beginner Driving Course, Expert Driving Instructors, Driver Training BC"
     />
     <meta name="author" content="Maneuver Driving School" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#15202a" />
 
-    <!-- Open Graph Meta Tags -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://maneuverdrivingschool.ca" />
     <meta
       property="og:title"
-      content="Maneuver Driving School – ICBC Certified in Vancouver"
+      content="Maneuver Driving School – ICBC Lessons in Vancouver"
     />
     <meta
       property="og:description"
@@ -30,14 +32,13 @@
       property="og:image"
       content="https://maneuverdrivingschool.ca/assets/images/maneuverLogoOnly.png"
     />
-    <meta property="og:url" content="https://maneuverdrivingschool.ca" />
-    <meta property="og:type" content="website" />
 
-    <!-- Twitter Meta Tags -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://maneuverdrivingschool.ca" />
     <meta
       name="twitter:title"
-      content="Maneuver Driving School – ICBC Certified Lessons"
+      content="Maneuver Driving School – ICBC Lessons in Vancouver"
     />
     <meta
       name="twitter:description"
@@ -48,25 +49,45 @@
       content="https://maneuverdrivingschool.ca/assets/images/maneuverLogoOnly.png"
     />
 
-    <!-- Favicon and Stylesheets -->
+    <!-- Favicon and Apple Icon -->
     <link
       rel="icon"
       href="./assets/images/maneuverLogoOnly.png"
       sizes="512x512"
-      type="image/jpg"
+      type="image/png"
     />
     <link rel="apple-touch-icon" href="./assets/images/maneuverLogoOnly.png" />
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="canonical" href="https://maneuverdrivingschool.ca/" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-dTCgA2lbCN94kmC+uU8R3hH0QldMYkU5y9Gp4RV1GEO9KjkXefVvFc9+z9DbONrQo9AbFS/NrXdq/R+CmYl5RA=="
+      integrity="sha512-8sZ79hYqQ0NqP9axCwNTXg9gbJ5M69A+Y9hrzVhuFZ5no7Lo7jFNjW6z8nlrFADLwrCUn5eVdguMDPqT90Yc1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <!-- Scripts -->
     <script
       src="https://kit.fontawesome.com/828ee17a2b.js"
       crossorigin="anonymous"
@@ -74,63 +95,35 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    />
 
+    <!-- Canonical -->
+    <link rel="canonical" href="https://maneuverdrivingschool.ca/" />
+
+    <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "url": "https://www.maneuverdrivingschool.ca",
-        "name": "Maneuver Driving School – ICBC Certified Lessons in Vancouver",
-        "description": "Maneuver Driving School, ICBC Certified, Vancouver Driving School, Driving Lessons BC, Road Test Preparation, Learn to Drive Vancouver, Class 5 Driving Lessons, Class 7 Driving Lessons, Beginner Driving Course, Expert Driving Instructors, Driver Training BC",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://www.maneuverdrivingschool.ca/assets/images/maneuverLogoOnly",
-          "width": 800,
-          "height": 600
-        }
+        "@type": "DrivingSchool",
+        "name": "Maneuver Driving School",
+        "url": "https://maneuverdrivingschool.ca",
+        "logo": "https://maneuverdrivingschool.ca/assets/images/maneuverLogoOnly.png",
+        "image": "https://maneuverdrivingschool.ca/assets/images/",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "5112 Elgin St",
+          "addressLocality": "Vancouver",
+          "addressRegion": "BC",
+          "postalCode": "V5W 3J8",
+          "addressCountry": "CA"
+        },
+        "telephone": "+1-604-000-0000"
       }
     </script>
   </head>
 
   <body>
-    <!-- page loader starts -->
-    <!--     <div id="loader" class="loader">
-      <img src="./assets/images/kicksyload.gif" alt="Loading" />
-    </div> -->
-    <!-- page loader ends -->
-    <!-- pop-ups -->
-    <!-- <div class="overlay" id="offerPopup">
-      <div class="popup">
-        <button class="close-btn" onclick="closePopup()">&times;</button>
-        <img src="./assets/images/specialoffer.png" alt="Special Offer" />
-        <h1>Maneuver's Daily Shoe Picks!</h1>
-        <p>
-          Enjoy fresh sneaker discounts every day! Limited-time offer, check
-          back daily for new picks!
-        </p>
-        <button onclick="window.open('https://maneuver/', '_blank')">
-          Grab Yours Today!
-        </button>
-      </div>
-    </div> -->
-    <!-- pop-ups ends -->
-
     <nav class="navbar" id="navbar">
       <div class="max-width">
         <div class="logo">
@@ -163,25 +156,29 @@
           <a
             href="https://www.instagram.com/maneuverdrivingschool/"
             target="_blank"
+            aria-label="Instagram"
           >
             <i class="fab fa-instagram"></i>
           </a>
           <a
             href="https://www.tiktok.com/@maneuverdrivingschool"
             target="_blank"
+            aria-label="TikTok"
           >
             <i class="fab fa-tiktok"></i>
           </a>
           <a
             href="https://www.facebook.com/share/1CJc2cbQYL/?mibextid=wwXIfr"
             target="_blank"
+            aria-label="Facebook"
           >
             <i class="fab fa-facebook"></i>
           </a>
 
           <a
-            href="https://www.youtube.com/channel/?sub_confirmation=1"
+            href="https://www.youtube.com/channel/UC5O_U2inDdf9JMBtvlA-orw?sub_confirmation=1"
             target="_blank"
+            aria-label="YouTube"
           >
             <i class="fab fa-youtube"></i>
           </a>
@@ -189,6 +186,7 @@
           <a
             href="https://wa.me/17787232850?text=Hi%20I%20wanna%20know%20more%20about%20your%20driving%20packages!"
             target="_blank"
+            aria-label="WhatsApp"
           >
             <i class="fab fa-whatsapp"></i>
           </a>
@@ -218,7 +216,11 @@
         ICBC Certified | Expert Instructors | Flexible Packages
       </div>
 
-      <img src="./assets/images/carman.png" alt="Car" class="car" />
+      <img
+        src="./assets/images/carman.png"
+        alt="Car Illustration"
+        class="car"
+      />
     </section>
 
     <!-- home section ends -->
@@ -231,36 +233,36 @@
           <div class="column left" data-aos="fade-right">
             <div class="slideshow-container">
               <div class="mySlides fade">
-                <img src="./assets/images/cars/1.jpeg" alt="image" />
+                <img src="./assets/images/cars/1.webp" alt="image" />
               </div>
 
               <div class="mySlides fade">
-                <img src="./assets/images/cars/2.jpeg" alt="image" />
+                <img src="./assets/images/cars/2.webp" alt="image" />
               </div>
 
               <div class="mySlides fade">
-                <img src="./assets/images/cars/3.jpeg" alt="image" />
+                <img src="./assets/images/cars/3.webp" alt="image" />
               </div>
               <div class="mySlides fade">
-                <img src="./assets/images/cars/4.jpeg" alt="image" />
+                <img src="./assets/images/cars/4.webp" alt="image" />
               </div>
               <div class="mySlides fade">
                 <img
-                  src="./assets/images/cars/5.jpeg"
+                  src="./assets/images/cars/5.webp"
                   alt="image"
                   loading="lazy"
                 />
               </div>
               <div class="mySlides fade">
                 <img
-                  src="./assets/images/cars/6.jpeg"
+                  src="./assets/images/cars/6.webp"
                   alt="image"
                   loading="lazy"
                 />
               </div>
               <div class="mySlides fade">
                 <img
-                  src="./assets/images/cars/7.jpeg"
+                  src="./assets/images/cars/7.webp"
                   alt="image"
                   loading="lazy"
                 />
@@ -374,7 +376,7 @@
                 alt="person"
                 loading="lazy"
               />
-              <div class="text">Aashish, Burnaby</div>
+              <div class="text">Aashish, Vancouver</div>
               <p>
                 “Maneuver made driving feel easy! Super patient and friendly
                 instructors.”
@@ -388,7 +390,7 @@
                 alt="person1"
                 loading="lazy"
               />
-              <div class="text">Pema, Surrey</div>
+              <div class="text">Pema, Vancouver</div>
               <p>
                 “Passed my road test on the first try, <br />
                 all thanks to the Maneuver team.”
@@ -402,22 +404,15 @@
                 alt="person"
                 loading="lazy"
               />
-              <div class="text">Kripesh Gurung</div>
+              <div class="text">Kripesh, Vancouver</div>
               <p>"Very good trainer!"</p>
             </div>
           </div>
 
           <!-- card ends  -->
         </div>
-        <!-- <a
-          href="https://maneuverdrivingschool.ca/feedback/"
-          class="btn btn-default"
-          target="_blank"
-          >Give Feedback</a
-        > -->
       </div>
     </section>
-
     <!-- testimonials section ends -->
     <!-- contact section starts -->
     <section class="contact" id="contact">
@@ -449,28 +444,33 @@
           <a
             href="https://www.instagram.com/maneuverdrivingschool/"
             target="_blank"
+            aria-label="Instagram"
             ><i class="fab fa-instagram-square"></i
           ></a>
           <a
             href="https://www.tiktok.com/@maneuverdrivingschool/"
             target="_blank"
+            aria-label="TikTok"
             ><i class="fab fa-tiktok"></i
           ></a>
           <a
             href="https://www.facebook.com/share/1CJc2cbQYL/?mibextid=wwXIfr"
             target="_blank"
+            aria-label="Facebook"
             ><i class="fab fa-facebook-square"></i
           ></a>
 
           <a
-            href="https://www.youtube.com/channel/UCH7MPOYiJx3OelDoalIQoyA?sub_confirmation=1"
+            href="https://www.youtube.com/channel/UC5O_U2inDdf9JMBtvlA-orw?sub_confirmation=1"
             target="_blank"
+            aria-label="YouTube"
             ><i class="fab fa-youtube-square"></i
           ></a>
 
           <a
             href="https://wa.me/17787232850?text=Hi%20I%20wanna%20know%20more%20about%20your%20driving%20packages!"
             target="_blank"
+            aria-label="WhatsApp"
           >
             <i class="fab fa-whatsapp-square"></i>
           </a>
@@ -480,100 +480,10 @@
         </div>
       </div>
     </section>
-
     <!-- contact section ends -->
     <!-- sripts foot -->
-
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script src="https://apis.google.com/js/platform.js"></script>
-    <!-- yt button -->
-    <script>
-      function openChannel() {
-        window.open("https://www.youtube.com/channel/", "_blank");
-      }
-    </script>
-    <!-- theme switch -->
-    <script>
-      var icon = document.getElementById("icon");
-      icon.onclick = function () {
-        document.body.classList.toggle("light-theme");
-      };
-    </script>
-    <!--     <script>
-      window.addEventListener("load", function () {
-        document.body.classList.add("loaded");
-      });
-    </script> -->
-    <!-- popup offer  -->
-    <!-- <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        setTimeout(() => {
-          let popup = document.getElementById("offerPopup");
-          popup.style.display = "flex";
-          setTimeout(() => {
-            popup.querySelector(".popup").style.transform = "translateY(0)";
-            popup.querySelector(".popup").style.opacity = "1";
-          }, 50);
-        }, 3000);
-
-        // Close the popup when clicking on the overlay
-        let overlay = document.getElementById("offerPopup");
-        overlay.addEventListener("click", function (e) {
-          if (e.target === overlay) {
-            closePopup();
-          }
-        });
-      });
-
-      function closePopup() {
-        let popup = document.getElementById("offerPopup");
-        popup.querySelector(".popup").style.transform = "translateY(-20px)";
-        popup.querySelector(".popup").style.opacity = "0";
-        setTimeout(() => {
-          popup.style.display = "none";
-        }, 300);
-      }
-    </script> -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
-      particlesJS("particles-js", {
-        particles: {
-          number: { value: 40, density: { enable: true, value_area: 800 } },
-          color: { value: "#54a0ff" },
-          shape: { type: "circle" },
-          opacity: {
-            value: 0.6,
-            random: true,
-            anim: { enable: true, speed: 1, opacity_min: 0.2, sync: false },
-          },
-          size: {
-            value: 4,
-            random: true,
-            anim: { enable: true, speed: 3, size_min: 1, sync: false },
-          },
-          move: {
-            enable: true,
-            speed: 1.5,
-            direction: "none",
-            random: true,
-            straight: false,
-            out_mode: "out",
-            bounce: false,
-          },
-        },
-        interactivity: {
-          detect_on: "window",
-          events: {
-            onhover: { enable: true, mode: "grab" },
-            onclick: { enable: true, mode: "push" },
-          },
-          modes: {
-            grab: { distance: 150, line_linked: { opacity: 0.4 } },
-            push: { particles_nb: 4 },
-          },
-        },
-        retina_detect: true,
-      });
-    </script>
   </body>
 </html>
