@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MDS- Booking Form</title>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="MDS- Booking Form" />
+    <meta
+      property="og:description"
+      content="Ready to start driving? 
+                Fill this quick form — we’ll contact you soon to confirm your schedule."
+    />
+    <meta
+      property="og:image"
+      content="https://maneuverdrivingschool.ca/assets/images/form.png"
+    />
+    <meta
+      property="og:url"
+      content="https://maneuverdrivingschool.ca/booking/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MDS- Booking Form" />
+    <meta name="theme-color" content="#15202a" />
+
+    <!-- Twitter Card  -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MDS- Booking Form" />
+    <meta
+      name="twitter:description"
+      content="Ready to start driving? 
+            Fill this quick form — we’ll contact you soon to confirm your schedule."
+    />
+    <meta
+      name="twitter:image"
+      content="https://maneuverdrivingschool.ca/assets/images/form.png"
+    />
+
+    <link
+      rel="icon"
+      href=" ./assets/images/maneuverLogoOnly.png"
+      sizes="512x512"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="./assets/images/maneuverLogoOnly.png" />
+
+    <style>
+      /* Root styles for dark mode and smooth aesthetics */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* Background with a smooth gradient for a premium look */
+      body {
+        background: linear-gradient(135deg, #15202a, #1d2a35);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      /* Form container with soft edges and elegant shadows */
+      .google-form-container {
+        width: 100%;
+        max-width: 700px;
+        background: #f6f4e8;
+        padding: 25px;
+        border-radius: 14px;
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05),
+          0 10px 40px rgba(255, 255, 255, 0.08);
+        text-align: center;
+        animation: fadeIn 0.8s ease-in-out;
+      }
+
+      /* Smooth fade-in effect */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      /* Title styling for an elegant touch */
+      h2 {
+        color: #0d0d0d;
+        font-size: 26px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        letter-spacing: 0.5px;
+      }
+
+      /* Styling the embedded form */
+      .google-form-container iframe {
+        width: 100%;
+        height: 600px;
+        border-radius: 10px;
+        border: none;
+      }
+
+      /* Back button styling */
+      .back-button {
+        margin-top: 20px;
+        background: transparent;
+        border: 2px solid #f6f4e8;
+        color: #f6f4e8;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+      }
+
+      .back-button:hover {
+        background: #ffbd4b;
+        color: #fff;
+        box-shadow: 0 0 15px #ffbd4b;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .google-form-container {
+          padding: 20px;
+        }
+        h2 {
+          font-size: 22px;
+        }
+        .back-button {
+          width: 100%;
+          max-width: 250px;
+          padding: 12px;
+        }
+        .google-form-container iframe {
+          height: 70vh; /* Adjusting form height for smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="google-form-container">
+      <h2>Maneuver Driving School</h2>
+
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScLJwT5yrjLr21uli7Kc9lhuuiFkiv_V16zITAFqtrs8RAMjg/viewform?embedded=true&hl=en"
+        >Loading…</iframe
+      >
+
+      <p
+        id="error-message"
+        style="
+          display: none;
+          color: white;
+          text-align: center;
+          margin-top: 20px;
+          font-size: 16px;
+        "
+      >
+        ⚠️ The form could not be loaded. Please try again later or
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdB4oBLIwXvectbKIa8HTPnS5muuHnSvkHFR_5hxSE_2BwGhA/viewform"
+          target="_blank"
+          style="color: #ff3c78; text-decoration: none; font-weight: bold"
+          >click here</a
+        >
+        to open it manually.
+      </p>
+
+      <script>
+        window.onload = function () {
+          const formIframe = document.getElementById("google-form");
+          const errorMessage = document.getElementById("error-message");
+
+          // Check if the form fails to load after 5 seconds
+          setTimeout(() => {
+            if (
+              !formIframe.contentWindow ||
+              formIframe.contentDocument.body.innerHTML.trim() === ""
+            ) {
+              formIframe.style.display = "none";
+              errorMessage.style.display = "block";
+            }
+          }, 5000); // 5-second timeout to check form loading
+        };
+      </script>
+    </div>
+
+    <!-- Back Button -->
+    <button
+      class="back-button"
+      onclick="window.location.href='https://maneuverdrivingschool.ca/'"
+    >
+      Back to MDS
+    </button>
+  </body>
+</html>
